@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Primer Página Web</title>
+</head>
+<body>
+    <h1>Mis datos personales</h1>
+    <p>
+        {{name}}
+        <br/>
+    </p>
+    <p>
+        {{age}}
+    </p>
+    <p>
+        {% if age > 50 %}
+            <h4>Ya estas viejillo...</h4>
+        {% endif %}
+    </p>
+    <p>
+        {% for i in subject %}
+            <h4>{{ i }}</h4>
+        {% endfor %}
+    </p>
+</body>
+</html>
